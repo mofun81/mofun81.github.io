@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+* {
+  list-style: none;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  color: #505962;
+}
+/* Navigation */
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  background: rgba(0, 0, 0, 0.6)!important;
+}
+
+.navbar-nav li {
+  padding-right: .7rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: blue;
+}
+
+/* landing Page */
+
+.home-inner {
+  background-image: url(img/fireplace.png);
+  background-size: cover;
+  height: 900px;
+}
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+  color: white;
+  text-transform: uppercase;
+}
+.caption h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+}
+
+.caption h3 {
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: ;: 1.6rem;
+}
+
+/* about */
+.padding {
+  padding: 1rem 0;
+}
+.about { 
+}
+.about img{
+  height: 100%;
+  width: 60%;
+}
+.about p {
+  display: inline-block;
+  width: 60%;
+}
+
+
+
+
+/* footer */
+footer {
+  background-color: #40474e;
+  color: white;
+  padding: 2rem 0 2rem;
+  margin-top: 1rem;
+}
+footer img {
+  height: 3rem;
+  margin: 1.5rem 0;
+}
+footer a {
+  color: white;
+}
+footer svg.svg-inline--fa {
+  font-size: 1.6rem;
+  margin: 1.2rem .5rem 0 0;
+}
+footer svg.svg-inline--fa:hover {
+  color: #1ebba3!important;
+}
+
+hr.socket {
+  width: 100%;
+  border-top: .2rem solid #666b71;
+  margin-top: 3rem;
