@@ -11,6 +11,7 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://sdk.form.run/js/v2/formrun.js"></script>
   <title>MyPortfolio</title>
 </head>
 
@@ -19,6 +20,7 @@
   <header>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a href="#" class="navbar-brand"><img src="img/logo.png"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -31,7 +33,7 @@
             <a href="#about" class="nav-link">about</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">service</a>
+            <a href="#service" class="nav-link">service</a>
           </li>
           <li class="nav-item">
             <a href="#works" class="nav-link">Works</a>
@@ -56,13 +58,13 @@
 
     <div class="caption text-center">
       <h1>Welcome</h1>
-      <h3>My Portfolio cite</h3>
+      <h3>My Portfolio</h3>
     </div>
     <!-- End Start Landing Page Section -->
 
     <!-- About -->
     <div id="about"></div>
-    <div class="container-fluid padding">
+    <div class="container-fluid pt-5">
       <div class="about text-center bg-light">
         <div class="row">
           <div class="col-md-6 mb-3 mt-3">
@@ -71,90 +73,113 @@
           <div class="col-md-6">
             <h2 class="mb-4 pt-5 font-weight-bold">About Me</h2>
             <h4>イカスミ</h4>
-            <p class="pt-5">神戸市在住、駆け出しコーダー。とりあえず月5万円目指して努力中。好きな食べ物はイカスミパスタ。</p>
-          </div>         
+            <p class="pt-5">神戸市在住、プログラミングに1度挫折してからもう一度勉強しなおし中。月5万円目指してます。好きな食べ物はイカスミパスタ。</p>
+          </div>
         </div>
       </div>
     </div>
     <!-- End About -->
-    <!-- service -->
-    <div class="container-fluid">
-      <div class="text-center">
-        <button class="btn btn-primary mb-5">good</button>
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th>A</th>
-              <th>B</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>AA</td>
-              <td>BB</td>
-            </tr>
-            <tr>
-              <td>AAA</td>
-              <td>BBB</td>
-            </tr>
-            <tr>
-              <td>AAAA</td>
-              <td>BBBB</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
 
-    <div class="ml-3 my-3">
-      <ul class="nav-tabs nav">
-        <li class="nav-item"><a href="#ios" class="nav-link active" data-toggle="tab">iOS</a></li>
-        <li class="nav-item"><a href="#android" class="nav-link" data-toggle="tab">Android</a></li>
-      </ul>
-      <div class="tab-content pl-3">
-        <div id="ios" class="tab-pane  fade show active">
-          <p>test test test test</p>
-        </div>       
-        <div id="android" class="tab-pane">
-          <p>and and and and</p>
+
+    <!-- service -->
+    <section class="service">
+      <div id="service" class="container text-center pt-5">
+        <div class="heading">
+          <h2>Services</h2>
+          <p>現在のサービスはこちら。実績を作るため格安でお受けします。</p>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-4 mt-4">
+            <div class="service-content">
+              <div class="service-icon">
+                <i class="fab fa-html5"></i>
+              </div>
+              <h3>Webページ制作</h3>
+              <p>シンプルなデザインのwebページ制作<br>1000円～</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4 mt-4">
+            <div class="service-content">
+              <div class="service-icon">
+                <i class="fa fa-mobile-alt"></i>
+              </div>
+              <h3>レスポンシブ化</h3>
+              <p>PCだけでなくスマートフォンの閲覧にも考慮したサイトを作ります。<br>1000円～</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4 mt-4">
+            <div class="service-content">
+              <div class="service-icon">
+                <i class="fa fa-laptop"></i>
+              </div>
+              <h3>Webコーディング</h3>
+              <p>HTML,CSS,Bootstrapを使ったwebページのコーディングを行います<br>1000円～</p>
+            </div>
+          </div>
+
         </div>
       </div>
-      
-    </div>
-    
+    </section>
     <!-- end service -->
 
     <!-- contact -->
     <div id="contact"></div>
     <div class="contact-form">
       <div class="form-title">お問い合わせ</div>
-      <form action="sent.php" method="post">
-        <div class="form-item">名前</div>
-          <input type="text" name="name">
-        <div class="form-item">email</div>
-          <input type="text" name="email">
+
+      <form class="formrun" action="https://form.run/api/v1/r/m1nr5qhrskra2o91bpx33ur9" method="post">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-item">名前</div>
+            <input type="text" name="name" placeholder="名前（必須）">
+          </div>
+          <div class="col-md-6">
+            <div class="form-item">email</div>
+            <input name="メールアドレス" type="text" data-formrun-type="email" placeholder="名前（必須）" data-formrun-required>
+            <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+          </div>
+        </div>
         <div class="form-item">内容</div>
-          <textarea name="body"></textarea>
-          <input type="submit" value="送信">
+        <textarea name="お問い合わせ" data-formrun-required placeholder="お問い合わせ内容（必須）"></textarea>
+        <div data-formrun-show-if-error="お問い合わせ">お問い合わせ入力してください</div>
+
+
+        <!-- ボット投稿をブロックするためのタグ -->
+        <div class="_formrun_gotcha">
+          <style media="screen">
+            ._formrun_gotcha {
+              position: absolute !important;
+              height: 1px;
+              width: 1px;
+              overflow: hidden;
+            }
+          </style>
+          <label for="_formrun_gotcha">If you are a human, ignore this field</label>
+          <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
+        </div>
+
+        <div>
+          <button type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中..."
+            class="btn btn-dark">送信</button>
+        </div>
       </form>
     </div>
+
     <!-- end contact -->
   </main>
   <footer>
-      <footer>
-        <div class="row justify-content-center">
-          <div class="col-md-5 text-center">           
-            <strong>Contact Info</strong>
-            <p>(888) 888-8888<br>email@ikasumi.com</p>
-            <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-          </div>   
-          <hr class="socket">
+    <footer>
+      <div class="row justify-content-center">
+        <div class="col-md-12 text-center">
+          <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="col-md-6 text-center">
           &copy; Ikasumi Theme
         </div>
-      </footer>
-
+      </div>
+    </footer>
   </footer>
 
 
